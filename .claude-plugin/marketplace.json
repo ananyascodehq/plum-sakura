@@ -1,0 +1,5 @@
+{
+  "name": "plum-sakura",
+  "owner": { "name": "ananyascodehq" },
+  "plugins": [{ "name": "plum-sakura", "source": "./" }]
+}
