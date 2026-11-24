@@ -147,7 +147,7 @@ function sign(d: SignData): string {
   const limitRow = (y: number, name: string, value: number | undefined) =>
     value === undefined
       ? ''
-      : `${text(62, y, 15, '500', '#f3e3cc', name, 'start')}${text(270, y, 15, '700', '#fff6e8', `${Math.round(value)}%`, 'end')}`
+      : `${text(86, y, 15, '500', '#f3e3cc', name, 'start')}${text(246, y, 15, '700', '#fff6e8', `${Math.round(value)}%`, 'end')}`
   return `<g transform="translate(0 168) scale(0.95)">
 <path d="M20 60 C60 54 92 34 122 14" fill="none" stroke="#3f2f22" stroke-width="9" stroke-linecap="round"/>
 <rect x="-8" y="-30" width="32" height="104" rx="7" fill="#3f2f22"/>
@@ -165,8 +165,8 @@ ${text(166, 106, 17, '600', '#f3e3cc', 'Memory used')}
 ${text(166, 156, 46, '700', '#fff6e8', `${d.pct}%`)}
 <rect x="86" y="168" width="${full}" height="14" rx="7" fill="#2a1d12"/>
 <rect x="86" y="168" width="${fill.toFixed(1)}" height="14" rx="7" fill="#f4a3cf"/>
-${limitRow(206, '5-hour limit', d.five)}
-${limitRow(228, 'Weekly limit', d.seven)}
+${limitRow(204, '5-hour limit', d.five)}
+${limitRow(226, 'Weekly limit', d.seven)}
 </g>
 <g transform="translate(236 -98) scale(0.82)">${bengalCat()}</g>
 <g class="dang"><path d="M294 -8 C316 -4 324 24 318 54 C314 72 316 86 322 96" fill="none" stroke="${BENGAL}" stroke-width="10" stroke-linecap="round"/><path d="M320 86 L322 98" fill="none" stroke="${BENGAL_DEEP}" stroke-width="10" stroke-linecap="round"/></g>
